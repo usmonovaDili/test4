@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>django3</title>
+</head>
+<body>
+<h2>django_3</h2>
+<ul>
+    {% for news in object_list%}
+    <li>{{ news.title }}</li>
+    <img alt="" src="media/{{news.media}">
+    <p>{{ news.body }}</p>
+    {% endfor %}
+</ul>
+</body>
+</html>
